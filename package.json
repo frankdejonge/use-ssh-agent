@@ -5,7 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "package": "ncc build start.js -C -o dist --minify && ncc build stop.js -C -o dist --minify"
+    "package": "npm run package:start && npm run package:stop",
+    "package:start": "ncc build start.js -C -o dist --minify && mv dist/index.js dist/start.js",
+    "package:stop": "ncc build stop.js -C -o dist --minify && mv dist/index.js dist/stop.js"
   },
   "keywords": [],
   "author": "",
