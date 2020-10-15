@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "package": "npm run package:start && npm run package:stop",
     "package:start": "ncc build start.js -C -o dist --minify && mv dist/index.js dist/start.js",

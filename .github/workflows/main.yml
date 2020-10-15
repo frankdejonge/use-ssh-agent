@@ -11,4 +11,4 @@ jobs:
       - uses: actions/checkout@v1
       - uses: ./
       - run: echo $SSH_AUTH_SOCK;
-      - run: echo SSH_AGENT_PID;
+      - run: echo $SSH_AGENT_PID;
