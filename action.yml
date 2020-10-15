@@ -1,8 +1,8 @@
 name: 'Start an SSH Agent'
 description: 'Start an SSH Agent'
 branding:
-  icon: activity
-  color: green
+  icon: unlock
+  color: yellow
 runs:
   using: 'node12'
   main: 'dist/start.js'
