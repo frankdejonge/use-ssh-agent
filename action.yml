@@ -1,0 +1,20 @@
+name: 'Use GitHub Token'
+description: 'Configure git to use a GitHub Access Token'
+branding:
+  icon: activity
+  color: green
+inputs:
+  authentication:
+    description: 'The authentication value'
+    required: true
+  user_name:
+    required: false
+    default: ''
+    description: 'git config --global user.name value'
+  user_email:
+    required: false
+    default: ''
+    description: 'git config --global user.email value'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
