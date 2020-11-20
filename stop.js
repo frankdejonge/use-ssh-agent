@@ -2,7 +2,7 @@ import { execFileSync } from 'child_process';
 
 try {
     if (process.env.SSH_AGENT_PID !== undefined) {
-        execFileSync('kill', [process.env.SSH_AGENT_PID], { stdio: 'inherit' });
+        process.kill(process.env.SSH_AGENT_PID);
     }
 } catch (error) {
     console.log(error.message);
