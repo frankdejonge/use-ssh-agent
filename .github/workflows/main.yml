@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Start an SSH Agent
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: ./
       - run: echo $SSH_AUTH_SOCK;
       - run: echo $SSH_AGENT_PID;
