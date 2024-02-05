@@ -4,7 +4,7 @@ branding:
   icon: unlock
   color: yellow
 runs:
-  using: 'node16'
+  using: 'node20'
   main: 'dist/start.js'
   post: 'dist/stop.js'
 
